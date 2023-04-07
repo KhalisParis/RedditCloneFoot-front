@@ -1,11 +1,18 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./src/*{.js }' /],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/**/*.js"],
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      colors: {
+        reddit_dark: {
+          DEFAULT: '#333'
+        },
+        reddit_dark_light: {
+          DEFAULT: '#444'
+        },
+        
+      },
+    },
   },
   plugins: [],
 }
